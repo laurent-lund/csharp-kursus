@@ -27,12 +27,12 @@ namespace Arrays
             for (int i = 0; i < nmonths; i++)
             {
                 msalary = rand.Next(54000, 65000);
-                Console.Write("Måned nummmer: "+(i+1));
+                Console.Write("Måned nummmer:\t"+(i+1));
                 Console.WriteLine(" : " +msalary);
                 total += msalary;
             }
 
-            Console.WriteLine("Total løn er     : "+total);
+            Console.WriteLine("Total løn er:       "+total);
             Console.WriteLine("");
 
             averagesalary = total / nmonths;
