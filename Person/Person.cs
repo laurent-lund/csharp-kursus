@@ -8,11 +8,6 @@ namespace Person
 {
     public class Person
     {
-
-//        private string fornavn;
-//        private string efternavn;
-//        private string fuldtnavn;
-
         //Automatisk egenskab - prop+TAB
         public string Fornavn { get; set; }
 
@@ -29,6 +24,5 @@ namespace Person
         {
             return Fornavn + ' ' + Efternavn;
         }
-
     }
 }

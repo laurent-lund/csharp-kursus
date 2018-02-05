@@ -28,8 +28,8 @@ namespace Overload2
         {
 
             Console.WriteLine(Beregn(1,2));
-            Console.WriteLine(Beregn(1, 2,3));
-            Console.WriteLine(Beregn(1, 2,3,4));
+            Console.WriteLine(Beregn(1,2,3));
+            Console.WriteLine(Beregn(1,2,3,4));
 
 
 
