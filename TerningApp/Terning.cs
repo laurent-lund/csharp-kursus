@@ -10,7 +10,7 @@ namespace TerningApp1
     {
         public int Værdi;
         private static System.Random rnd = new Random();
-
+         
         public Terning()
         {
             //this.Værdi = 1;
