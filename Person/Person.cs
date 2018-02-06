@@ -25,4 +25,15 @@ namespace Person
             return Fornavn + ' ' + Efternavn;
         }
     }
+
+    public class Elev : Person
+    {
+        public string Klasselokale { get; set; }
+    }
+
+    public class Instruktør : Person
+    {
+        public int Nøgleid { get; set; }
+
+    }
 }

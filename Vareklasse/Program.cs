@@ -15,10 +15,18 @@ namespace Vareklasse
 
             // Tildel navn
             v1.Navn = "Frosties";
+
+            // Tildel pris
             v1.Pris = 20.0;
+
+            // Udskriv navn
             Console.WriteLine(v1.Navn);
+
+            // Udskriv pris
             Console.WriteLine(v1.Pris);
-            Console.WriteLine("Pris incl. moms: "+PrisMedMoms());
+
+            // Udskriv pris incl. Moms.
+            Console.WriteLine("Pris incl. Moms: "+PrisMedMoms());
 
              double PrisMedMoms()
             {
@@ -59,14 +67,5 @@ namespace Vareklasse
                 Console.WriteLine("Pris sat.");
                 pris = value; }
         }
-
-        //public double PrisMedMoms()
-        //{
-        //    return 1.25 * Pris;
-        //}
-
-
-
-
     }
 }
