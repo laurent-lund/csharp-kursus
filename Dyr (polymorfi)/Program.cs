@@ -4,14 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Udvidet_Random
+namespace Dyr__polymorfi_
 {
-    public class UdvidetRandom : Random
+    class Program
     {
-        public bool NextBool()
+        static void Main(string[] args)
         {
-            return this.Next(1, 1002) < 500;
         }
-
     }
 }
