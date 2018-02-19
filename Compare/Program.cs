@@ -45,15 +45,18 @@ namespace Compare
             public int CompareTo(object obj)
             {
                 Hund h = obj as Hund;
-                if (h.Alder > this.Alder)
-                {
-                    return -1;
-                }
-                if (h.Alder < this.Alder)
-                {
-                    return 1;
-                }
-                return 0;
+
+                return Math.Sign(this.Alder - h.Alder);
+
+                //if (h.Alder > this.Alder)
+                //{
+                //    return -1;
+                //}
+                //if (h.Alder < this.Alder)
+                //{
+                //    return 1;
+                //}
+                //return 0;
             }
 
         }
