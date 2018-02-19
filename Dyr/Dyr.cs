@@ -17,7 +17,7 @@ namespace Dyr
 
         public virtual void SigNoget()
         {
-            Console.WriteLine("Jeg er et dyr, og hedder " + Navn + '.');
+            Console.WriteLine("Jeg er et dyr, og hedder " + Navn + ".");
         }
 
         public static Dyr TilfældigtDyr()
