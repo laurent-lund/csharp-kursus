@@ -11,9 +11,11 @@ namespace Using
     {
         static void Main(string[] args)
         {
+            string filepath = @"x:\dyrenavne.txt";
+
             // File read UDEN 'Using'.
             Console.WriteLine("File read uden Using.");
-            StreamReader stream = System.IO.File.OpenText(@"x:\dyrenavne.txt");
+            StreamReader stream = System.IO.File.OpenText(filepath);
             while (stream.Peek() != -1)
             {
                 string navn = stream.ReadLine();
@@ -23,10 +25,10 @@ namespace Using
             stream = null;
             Console.WriteLine("");
 
-
             // File read MED 'Using'.
+            // Den korrekte måde at gøre 'det' på!
             Console.WriteLine("File read med Using.");
-            using (StreamReader sr = File.OpenText(@"x:\dyrenavne.txt"))
+            using (StreamReader sr = File.OpenText(filepath))
             {
                 string s = "";
                 while ((s = sr.ReadLine()) != null)
@@ -34,7 +36,6 @@ namespace Using
                     Console.WriteLine(s);
                 }
             }
-
 
             if (System.Diagnostics.Debugger.IsAttached)
             {
