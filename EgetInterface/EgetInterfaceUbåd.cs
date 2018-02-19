@@ -13,7 +13,7 @@ namespace EgetInterface
 
         public void Gem()
         {
-            Console.WriteLine("Gemmer Hund.");
+            Console.WriteLine("Gemmer Ubåd.");
         }
     }
 }
